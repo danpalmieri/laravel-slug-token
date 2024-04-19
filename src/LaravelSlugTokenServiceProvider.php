@@ -2,9 +2,9 @@
 
 namespace DanPalmieri\LaravelSlugToken;
 
+use DanPalmieri\LaravelSlugToken\Commands\LaravelSlugTokenCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DanPalmieri\LaravelSlugToken\Commands\LaravelSlugTokenCommand;
 
 class LaravelSlugTokenServiceProvider extends PackageServiceProvider
 {
