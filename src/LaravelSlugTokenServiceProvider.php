@@ -17,9 +17,6 @@ class LaravelSlugTokenServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-slug-token')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-slug-token_table')
-            ->hasCommand(LaravelSlugTokenCommand::class);
+            ->hasConfigFile();
     }
 }
