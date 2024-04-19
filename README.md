@@ -16,7 +16,7 @@ composer require danpalmieri/laravel-slug-token
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-slug-token-config"
+php artisan vendor:publish --tag="slug-token-config"
 ```
 
 This is the contents of the published config file:
