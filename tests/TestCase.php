@@ -2,9 +2,9 @@
 
 namespace DanPalmieri\LaravelSlugToken\Tests;
 
+use DanPalmieri\LaravelSlugToken\LaravelSlugTokenServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use DanPalmieri\LaravelSlugToken\LaravelSlugTokenServiceProvider;
 
 class TestCase extends Orchestra
 {
