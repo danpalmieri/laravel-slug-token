@@ -1,9 +1,9 @@
-# Auto generate a unique and configurable token during the model creation.
+# Laravel Slug Token
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/danpalmieri/laravel-slug-token.svg?style=flat-square)](https://packagist.org/packages/danpalmieri/laravel-slug-token)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/danpalmieri/laravel-slug-token/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/danpalmieri/laravel-slug-token/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Auto generate a unique and configurable token during the model creation.
 
 ## Installation
 
@@ -28,9 +28,14 @@ return [
 
 ## Usage
 
+Just add the `HasSlugToken` trait to your model.
+
 ```php
-$laravelSlugToken = new DanPalmieri\LaravelSlugToken();
-echo $laravelSlugToken->echoPhrase('Hello, DanPalmieri!');
+use DanPalmieri\LaravelSlugToken\Traits\HasSlugToken;
+
+class YourModel extends Model
+{
+    use HasSlugToken; // Add this line
 ```
 
 ## Testing
